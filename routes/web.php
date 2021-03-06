@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\HomeController;
 
+
+Route::get('storagelink',function(){
+    return Artisan::call('storage:link');
+    return Artisan::output();
+});
 Route::get('/',[CvController::class, 'index'])->name('cv');
 Route::get('/portfolio', [PostController::class, 'index'])->name('posts.index');
 Route::get('posts/{post}',[PostController::class,'show'])->name('posts.show');
