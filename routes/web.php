@@ -9,7 +9,7 @@ use App\Http\Controllers\HomeController;
 
 
 Route::get('storagelink',function(){
-    return Artisan::call('storage:link');
+    return Artisan::call('Storage:link');
     return Artisan::output();
 });
 Route::get('/',[CvController::class, 'index'])->name('cv');
