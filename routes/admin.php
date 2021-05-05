@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\TagController;
 use App\Http\Controllers\Admin\PostController;
 
-Route::get('',[MainController::class,'index'])->name('admin.main');
+Route::get('principal',[MainController::class,'index'])->name('admin.main');
 
 Route::resource('categories', CategoryController::class)->names('admin.categories');
 

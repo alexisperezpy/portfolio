@@ -33,8 +33,8 @@
 
         {{-- Logotipo --}}
         <a href="/" class="flex-shrink-0 flex items-center">
-          <img class="block lg:hidden h-8 w-auto" src="{{ asset('/storage/dev-tool3.png') }}" alt="Workflow">
-          <img class="hidden lg:block h-8 w-auto" src="{{ asset('/storage/dev-tool.png') }}" alt="Workflow">
+          <img class="block lg:hidden h-8 w-auto" src="{{ asset('/img/logo-aleperez.png') }}" alt="Workflow">
+          <img class="hidden lg:block h-8 w-auto" src="{{ asset('/img/logo-aleperez.png') }}" alt="Workflow">
         </a>
 
         {{-- Menu LG --}}
@@ -101,11 +101,11 @@
           </div>
         </div>
       
-      @else
+      {{-- @else
         <div>
           <a href="{{ route('login') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Ingresar</a>
           {{-- <a href="{{ route('register') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Registrar</a> --}}
-        </div>
+       {{-- </div> --}}
       @endauth
 
       
